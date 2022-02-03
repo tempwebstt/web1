@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Card, Container, Row, Col, Table } from 'react-bootstrap';
 import QrReader from 'react-camera-qr'
 import * as Papa from 'papaparse';
+import eudig from './eudig.png';
+import tick from './tick.png';
 import logo from './eu.png';
 import './App.css';
 
@@ -223,7 +225,32 @@ class App extends Component {
             <br />
             <Card fluid>
               <Card.Body>
-                <Card.Title>Certificate Verification</Card.Title>
+                <Card.Title>
+                  <Card.Img className="demoimg" src={eudig} />
+                  {""} &nbsp;&nbsp; EU Digital COVID Certificate (EUDCC)
+                </Card.Title>
+                <hr />
+                <Card.Text>
+                  The EUDCC Regulation entered into application on 1 July 2021. EU citizens and residents will now be able to have their Digital COVID Certificates issued and verified across the EU.
+                </Card.Text>
+                <Card.Text className="mb-0">
+                  An EU Digital COVID Certificate is a digital proof that a person has either:
+                </Card.Text>
+                <ul className="mt-0">
+                  <li>been vaccinated against COVID-19</li>
+                  <li>received a negative test result or</li>
+                  <li>recovered from COVID-19</li>
+                </ul>
+              </Card.Body>
+            </Card>
+            <br />
+            <Card fluid>
+              <Card.Body>
+                <Card.Title>
+                  <Card.Img className="demoimg" src={tick} />
+                  {""} &nbsp;&nbsp; Certificate Verification
+                </Card.Title>
+                <hr />
                 <Card.Text>
                   Third parties can use the Online Validation service to reliably determine whether the vaccination certificate, certificate of recovery, or test certificate is valid.
                 </Card.Text>

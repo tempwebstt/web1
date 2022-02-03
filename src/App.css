@@ -15,3 +15,9 @@ body {
 .vert {
   vertical-align: middle !important;
 }
+
+.demoimg {
+    height: 50px !important;
+    width: auto !important;
+    margin: auto;
+}
