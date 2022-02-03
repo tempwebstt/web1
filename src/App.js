@@ -202,7 +202,9 @@ class App extends Component {
     return (
       <Container fluid className="m-0 p-0 bg-info">
         <Container fluid className="bg-light p-4">
-          <img src={logo} alt="logo" />
+          <a href="/">
+            <img src={logo} alt="logo" />
+          </a>
         </Container>
         <br />
         {this.state.result === 'No result' ?
@@ -227,7 +229,7 @@ class App extends Component {
               <Card.Body>
                 <Card.Title>
                   <Card.Img className="demoimg" src={eudig} />
-                  {""} &nbsp;&nbsp; EU Digital COVID Certificate (EUDCC)
+                  {""} &nbsp;&nbsp; EU Digital COVID Certificate
                 </Card.Title>
                 <hr />
                 <Card.Text>
